@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy policy — rclone-personal</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --fg: #e7ecf1;
+      --muted: #9aa7b5;
+      --accent: #3d9cfd;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      padding: 2rem 1.25rem 4rem;
+    }
+    article {
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+    h1 { font-size: 1.75rem; letter-spacing: -0.02em; }
+    h2 { font-size: 1.1rem; margin-top: 1.75rem; }
+    p, li { color: var(--muted); }
+    a { color: var(--accent); }
+    .meta { font-size: 0.9rem; color: #7a8794; }
+  </style>
+</head>
+<body>
+  <article>
+    <p><a href="index.html">← rclone-personal</a></p>
+    <h1>Privacy policy</h1>
+    <p class="meta">Last updated: 25 November 2026</p>
+
+    <p>
+      <strong style="color: var(--fg)">rclone-personal</strong> is a personal
+      Google OAuth client used with
+      <a href="https://rclone.org/">rclone</a> to access the operator’s own
+      cloud storage (for example Google Drive) for private backup and sync.
+    </p>
+
+    <h2>Who this applies to</h2>
+    <p>
+      This app is operated solely by Yuri Hackl
+      (<a href="mailto:yurihackl@gmail.com">yurihackl@gmail.com</a>)
+      for personal use. It is not offered to the public and has no end users
+      other than the operator.
+    </p>
+
+    <h2>Data we access</h2>
+    <p>When you authorize the app, Google may grant access to:</p>
+    <ul>
+      <li>Your Google account identity (email) for the consent screen</li>
+      <li>Cloud storage files and folders that rclone creates or syncs</li>
+    </ul>
+    <p>
+      File content stays in your Google account. This project does not run a
+      separate cloud service that stores, sells, or shares your files.
+    </p>
+
+    <h2>How data is used</h2>
+    <p>
+      Access is used only to upload, update, list, and delete files via rclone
+      on machines you control. Tokens are stored locally in your rclone
+      configuration.
+    </p>
+
+    <h2>Sharing</h2>
+    <p>
+      We do not sell or share Google account data with third parties. Google’s
+      own processing is covered by
+      <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
+    </p>
+
+    <h2>Retention</h2>
+    <p>
+      OAuth tokens remain until you revoke access in your
+      <a href="https://myaccount.google.com/permissions">Google Account permissions</a>
+      or delete the local rclone remote. Synced files remain until you delete them.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions:
+      <a href="mailto:yurihackl@gmail.com">yurihackl@gmail.com</a>
+    </p>
+  </article>
+</body>
+</html>

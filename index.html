@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>rclone-personal</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --fg: #e7ecf1;
+      --muted: #9aa7b5;
+      --accent: #3d9cfd;
+      --card: #1a222c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background:
+        radial-gradient(ellipse 80% 50% at 20% 0%, #1a3a5c 0%, transparent 55%),
+        radial-gradient(ellipse 60% 40% at 90% 80%, #123048 0%, transparent 50%),
+        var(--bg);
+      color: var(--fg);
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    main {
+      max-width: 36rem;
+      width: 100%;
+      background: color-mix(in srgb, var(--card) 88%, transparent);
+      border: 1px solid #2a3644;
+      border-radius: 16px;
+      padding: 2rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+    .brand img { width: 48px; height: 48px; }
+    h1 { margin: 0; font-size: 1.5rem; letter-spacing: -0.02em; }
+    p { color: var(--muted); line-height: 1.55; }
+    a { color: var(--accent); }
+    nav { margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <img src="assets/logo.svg" alt="rclone-personal logo" />
+      <h1>rclone-personal</h1>
+    </div>
+    <p>
+      Personal OAuth client for <a href="https://rclone.org/">rclone</a>
+      remotes (Google Drive and similar). Used for private backups and sync —
+      not a public product.
+    </p>
+    <nav>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="https://github.com/YpsilonTM/rclone-personal">Source</a>
+    </nav>
+  </main>
+</body>
+</html>
